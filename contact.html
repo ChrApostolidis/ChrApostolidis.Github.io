@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Οι Πίτες του Πίτου - Κατάστημα</title>
+</head>
+<body>
+    <header>
+        <h2><a href="index.html"> Οι Πίτες του Πίτου</a></h2>
+        <p>Πάρε μου μια ...Πίτα!</p>
+        <nav>
+            <ul>
+                <li><a href="store.html">Κατάστημα</a></li>
+                <li><a href="pies.html">Πίτες</a></li>
+                <li><a href="contact.html">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Επικοινωνία</h1>
+        <form action="/sendData" method="POST">
+            <label for="txtFullName">Ονοματεπώνημο:</label>
+                <input type="text" id="txtFullName" name="Name" minlength="4" maxlength="25" required>
+            (*)
+            <br>            
+            <label for="txtE-mail">E-mail:</label>
+                <input type="text" id="txtE-mail" name="E-mail" minlength="4" maxlength="25" required>
+            (*)
+            <br>
+            <label for="txtTel">Τηλέφωνο:</label>
+                <input type="text" id="txtTel" name="phone" minlength="10" maxlength="15" required>
+            (*)
+            <br>
+            <label for="txtComments">Μήνυμα:</label>
+                <textarea id="txtComments" name="Comments" rows="6" cols="40"></textarea>
+            <br>
+            <p>Τα πεδία με (*) είναι υποχρεωτικά.</p>
+            <input type="submit" value="Αποστολή">
+            <input type="reset" value="Καθαρισμός">
+        </form>
+   </main>
+
+   <aside>
+        <h2>Προσφορές</h2>
+        <p>Giveaway 10</p>
+        <p>Στις 10 η 1 Δώρο</p>
+   </aside>
+
+   <footer>
+        <p>&copy;Οι Πίτες του Πίτου 2024</p>
+   </footer>
+</body>
+
+</html>

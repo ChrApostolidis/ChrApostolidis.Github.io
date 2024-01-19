@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Οι Πίτες του Πίτου - Κατάστημα</title>
+</head>
+<body>
+    <header>
+        <h2><a href="index.html"> Οι Πίτες του Πίτου</a></h2>
+        <p>Πάρε μου μια ...Πίτα!</p>
+        <nav>
+            <ul>
+                <li><a href="store.html">Κατάστημα</a></li>
+                <li><a href="pies.html">Πίτες</a></li>
+                <li><a href="contact.html">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Οι Πίτες</h1>
+        <article>
+            <h2>Οι Πίτες μας</h2>
+           <table>
+            <tr>
+                <td><img src="images/Spanakopita.jpg"width=100px height="100px" alt=Σπανόκπιτα></td>
+                <td>Σπανακόπιτα: 4€</td>
+            </tr>
+            <tr>
+                <td><img src="images/manitaropita.jpg"width=100px alt=Μανιταρόπιτα></td>
+                <td>Μανιταρόπιτα: 5,5€</td>
+            </tr>
+            <tr>    
+                <td><img src="images/prasopita.jpg"width=100px alt=Πρασόπιτα></td>
+                <td>Πρασόπιτα: 3,5€</td>
+            </tr>
+            <tr>
+                <td><img src="images/mpoureki.jpg"width=100px alt=Μπουρέκι></td>
+                <td>Μπουρέκι: 4,5€</td>
+            </tr>
+            </table>
+        </article>
+        <form>
+        <fieldset>
+            <legend>
+                Πληροφορίες Παράδοσης:
+            </legend>
+            <label for="txtFullName">Ονοματεπώνημο:</label>
+                <input type="text" id="txtFullName" name="Name" minlength="4" maxlength="25" required>
+            (*)
+            <br>
+            <label for="txtAddress">Διευθυνσή(Οδός-Αριθμός):</label>
+                <input type="text" id="txtAddress" name="Address" minlength="4" maxlength="30" required>
+            (*)
+            <br>
+            <label for="slAddress">Περιοχή</label>
+                <select id="slAddress" name="AddressSl">
+                    <option value="Αμπελόκηποι" selected>Αμπελόκηποι</option>
+                    <option value="Μενεμένη">Μενεμένη</option>
+                </select>
+            (*)
+            <br>
+            <label for="txtTel">Τηλέφωνο:</label>
+                <input type="text" id="txtTel" name="phone" minlength="10" maxlength="15" required>
+            (*)
+            <br>
+            <label for="txtE-mail">E-mail:</label>
+                <input type="text" id="txtE-mail" name="E-mail" minlength="4" maxlength="25" required>
+            (*)
+            <br>
+            <label for="txtComments">Ειδικές Πληροφορίες για την Παράδοση:</label>
+                <textarea id="txtComments" name="Comments" rows="6" cols="40"></textarea>
+            <br>
+            Τα πεδία με (*) είναι υποχρεωτικά.               
+        </fieldset>
+
+            <fieldset>
+                <legend>
+                    Παραγγελία:
+                </legend>
+                <ul>
+                    <li>
+                        <label for="nbSpianch">Σπανακόπιτες:</label>
+                        <input type="number" id="nbSpianch" name="Spinach" min="1" max="10" value="0"> 
+                    </li>                
+                    <li>
+                        <label for="nbMushroom">Μανιταρόπιτες:</label>
+                        <input type="number" id="nbMushroom" name="Mushroom" min="1" max="10" value="0"> 
+                    </li>
+
+                    <li>
+                        <label for="nbPraso">Πρασόπιτες:</label>
+                        <input type="number" id="nbPraso" name="Praso" min="1" max="10" value="0"> 
+                    </li>
+                    <li>
+                        <label for="nbMpoureki">Μπουρέκια:</label>
+                        <input type="number" id="nbMpoureki" name="Mpoureki" min="1" max="10" value="0"> 
+                    </li>
+                </ul>
+                <input type="checkbox" id="cbDiscount" name="Discount" value="cbDiscount">
+                <label for="cbDiscount">Ενσωμάτωση Προσφοράς στις 10 πίτες η 1 Δώρο!!!</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Τρόποι Πληρωμής:
+                </legend>
+                <input type="radio" id="rdVISA" name="payment" value="rdVISA">
+                <label for="rdVISA">VISA</label>
+                 <input type="radio" id="rdCash" name="payment" value="rdCash">
+                <label for="rdCash">Μετρητά</label>
+                 <input type="radio" id="rdCredit" name="payment" value="rdCredit">
+                <label for="rdCredit">Πίστωση</label> 
+                <br>
+            </fieldset>
+
+            <input type="submit" value="Αποστολή">
+            <input type="reset"  value="Καθαρισμός">
+        </form>
+    </main>
+
+
+   <aside>
+        <h2>Προσφορές</h2>
+        <p>Giveaway 10</p>
+        <p>Στις 10 η 1 Δώρο</p>
+   </aside>
+
+   <footer>
+        <p>&copy;Οι Πίτες του Πίτου 2024</p>
+   </footer>
+</body>
+</html>
